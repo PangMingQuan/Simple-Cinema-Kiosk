@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>C:\Users\enduser\Desktop\Los Pepes Cinema\main.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.style11 { color: #000000; background-color: #FFFFFF; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #BEBEE6; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style20 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<pre>
+<code><span style="font: 8pt Courier New;"><span class="body">  1 </span><span class="style9">#include &lt;iostream&gt;</span>
+<span class="body">  2  </span>
+<span class="body">  3  </span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;</span>
+<span class="body">  4  </span>
+<span class="body">  5  </span><span class="style5">int </span><span class="style11">main</span><span class="style10">()</span>
+<span class="body">  6  </span><span class="style10">{</span>
+<span class="body">  7     </span><span class="style5">int </span><span class="style11">numberSeats</span><span class="style10">,</span><span class="style11">counter</span><span class="style10">,</span><span class="style11">numberSenior_Citizens</span><span class="style10">,</span><span class="style11">numberAdult</span><span class="style10">,</span><span class="style11">numberStudent</span><span class="style10">,</span><span class="style11">numberChildren</span><span class="style10">;</span>
+<span class="body">  8     </span><span class="style5">float </span><span class="style11">totalPrice</span><span class="style10">,</span><span class="style11">priceSenior_Citizens</span><span class="style10">,</span><span class="style11">priceAdult</span><span class="style10">,</span><span class="style11">priceStudent</span><span class="style10">,</span><span class="style11">priceChildren</span><span class="style10">,</span><span class="style11">numberMovie</span><span class="style10">,</span><span class="style11">ShowTime</span><span class="style10">;</span>
+<span class="body">  9     </span><span class="style16">string </span><span class="style11">numberSeating</span><span class="style10">;</span>
+<span class="body"> 10  </span>
+<span class="body"> 11     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Welcome to Los Pepes Cinema! :D"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 12     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy movies with ATMOS DOLBY at the cheapest price!\n"</span><span class="style10">;</span>
+<span class="body"> 13     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"***************************************************"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 14     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nMovie list: "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 15     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"1. Avengers: Infinity War\n"</span><span class="style10">;</span>
+<span class="body"> 16     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"2. Deadpool 2\n"</span><span class="style10">;</span>
+<span class="body"> 17     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"3. Jumanji: Welcome To The Jungle\n"</span><span class="style10">;</span>
+<span class="body"> 18     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"4. Jurassic World: Fallen Kingdom\n"</span><span class="style10">;</span>
+<span class="body"> 19     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"5. The Incredibles 2\n"</span><span class="style10">;</span>
+<span class="body"> 20     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"*All the movies are available in ATMOS DOLBY ONLY*"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 21  </span>
+<span class="body"> 22     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPrice list: "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 23     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"1. Senior Citizen          : RM7.00"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 24     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"2. Adult                   : RM10.00"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 25     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"3. Student                 : RM8.00"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 26     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"4. Children                : RM5.00"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 27     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 28     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"*This rate applies to Weekdays, Weekends and Public Holidays!"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 29  </span>
+<span class="body"> 30     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the movie that you would like to watch (1/2/3/4/5): "</span><span class="style10">;</span>
+<span class="body"> 31     </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberMovie</span><span class="style10">;</span>
+<span class="body"> 32  </span>
+<span class="body"> 33     </span><span class="style5">if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body"> 34          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of seats: "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 35          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeats</span><span class="style10">;</span>
+<span class="body"> 36     </span><span class="style10">} </span><span class="style5">else </span><span class="style10">{</span>
+<span class="body"> 37          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Invalid input. Please reenter your choice: "</span><span class="style10">;</span>
+<span class="body"> 38          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberMovie</span><span class="style10">;</span>
+<span class="body"> 39           </span><span class="style5">if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body"> 40          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of seats: "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 41          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeats</span><span class="style10">;</span>
+<span class="body"> 42          </span><span class="style10">}</span>
+<span class="body"> 43          </span><span class="style5">while </span><span class="style10">((</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">5</span><span class="style10">)==</span><span class="style5">false</span><span class="style10">){</span>
+<span class="body"> 44          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Invalid input. Please reenter your choice: "</span><span class="style10">;</span>
+<span class="body"> 45          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberMovie</span><span class="style10">;</span>
+<span class="body"> 46          </span><span class="style5">if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body"> 47          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of seats: "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 48          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeats</span><span class="style10">;</span>
+<span class="body"> 49          </span><span class="style10">}</span>
+<span class="body"> 50          </span><span class="style10">}</span>
+<span class="body"> 51     </span><span class="style10">}</span>
+<span class="body"> 52  </span>
+<span class="body"> 53     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nShow Times: 12.00p.m, 2.00p.m, 4.00p.m, 6.00p.m, 8.00p.m"</span><span class="style10">;</span>
+<span class="body"> 54     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n1. 12.00p.m"</span><span class="style10">;</span>
+<span class="body"> 55     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n2. 2.00p.m"</span><span class="style10">;</span>
+<span class="body"> 56     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n3. 4.00p.m"</span><span class="style10">;</span>
+<span class="body"> 57     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n4. 6.00p.m"</span><span class="style10">;</span>
+<span class="body"> 58     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n5. 8.00p.m"</span><span class="style10">;</span>
+<span class="body"> 59     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter your desired show time (1/2/3/4/5): "</span><span class="style10">;</span>
+<span class="body"> 60     </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">ShowTime</span><span class="style10">;</span>
+<span class="body"> 61     </span><span class="style5">if </span><span class="style10">((</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">5</span><span class="style10">)){</span>
+<span class="body"> 62          </span><span class="style11">counter </span><span class="style10">=</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body"> 63           </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n----------------------------------SCREEN----------------------------------"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 64  </span>
+<span class="body"> 65     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nJ10     J9  J8  J7  J6  J5  J4  J3  J2  J1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 66     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"I10   I9  I8  I7  I6  I5  I4  I3  I2  I1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 67     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"H10   H9  H8  H7  H6  H5  H4  H3  H2  H1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 68     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"G10   G9  G8  G7  G6  G5  G4  G3  G2  G1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 69     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"F10   F9  F8  F7  F6  F5  F4  F3  F2  F1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 70     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"E10   E9  E8  E7  E6  E5  E4  E3  E2  E1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 71     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"D10   D9  D8  D7  D6  D5  D4  D3  D2  D1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 72     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"C10   C9  C8  C7  C6  C5  C4  C3  C2  C1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 73     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"B10   B9  B8  B7  B6  B5  B4  B3  B2  B1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 74     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"A10   A9  A8  A7  A6  A5  A4  A3  A2  A1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 75  </span>
+<span class="body"> 76          </span><span class="style5">while </span><span class="style10">(</span><span class="style11">counter</span><span class="style10">&lt;=</span><span class="style11">numberSeats</span><span class="style10">){</span>
+<span class="body"> 77              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the preferred seating number "</span><span class="style10">&lt;&lt;</span><span class="style11">counter</span><span class="style10">&lt;&lt;</span><span class="style6">" :"</span><span class="style10">;</span>
+<span class="body"> 78              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeating</span><span class="style10">;</span>
+<span class="body"> 79              </span><span class="style11">counter</span><span class="style10">++;</span>
+<span class="body"> 80              </span><span class="style10">}</span>
+<span class="body"> 81     </span><span class="style10">}</span>
+<span class="body"> 82          </span><span class="style5">else </span><span class="style10">{</span>
+<span class="body"> 83          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Invalid input, please re-enter your desired show time: "</span><span class="style10">;</span>
+<span class="body"> 84          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">ShowTime</span><span class="style10">;</span>
+<span class="body"> 85          </span><span class="style5">if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body"> 86          </span><span class="style11">counter </span><span class="style10">=</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body"> 87           </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n----------------------------------SCREEN----------------------------------"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 88  </span>
+<span class="body"> 89     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nJ10     J9  J8  J7  J6  J5  J4  J3  J2  J1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 90     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"I10   I9  I8  I7  I6  I5  I4  I3  I2  I1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 91     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"H10   H9  H8  H7  H6  H5  H4  H3  H2  H1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 92     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"G10   G9  G8  G7  G6  G5  G4  G3  G2  G1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 93     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"F10   F9  F8  F7  F6  F5  F4  F3  F2  F1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 94     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"E10   E9  E8  E7  E6  E5  E4  E3  E2  E1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 95     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"D10   D9  D8  D7  D6  D5  D4  D3  D2  D1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 96     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"C10   C9  C8  C7  C6  C5  C4  C3  C2  C1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 97     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"B10   B9  B8  B7  B6  B5  B4  B3  B2  B1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 98     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"A10   A9  A8  A7  A6  A5  A4  A3  A2  A1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 99  </span>
+<span class="body">100              </span><span class="style5">while </span><span class="style10">(</span><span class="style11">counter</span><span class="style10">&lt;=</span><span class="style11">numberSeats</span><span class="style10">){</span>
+<span class="body">101              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the preferred seating number "</span><span class="style10">&lt;&lt;</span><span class="style11">counter</span><span class="style10">&lt;&lt;</span><span class="style6">" :"</span><span class="style10">;</span>
+<span class="body">102              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeating</span><span class="style10">;</span>
+<span class="body">103              </span><span class="style11">counter</span><span class="style10">++;</span>
+<span class="body">104              </span><span class="style10">}</span>
+<span class="body">105          </span><span class="style10">}</span>
+<span class="body">106          </span><span class="style5">while </span><span class="style10">((</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">5</span><span class="style10">)==</span><span class="style5">false</span><span class="style10">){</span>
+<span class="body">107          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Invalid input, please re-enter your desired show time: "</span><span class="style10">;</span>
+<span class="body">108          </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">ShowTime</span><span class="style10">;</span>
+<span class="body">109           </span><span class="style5">if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">1</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">2</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">3</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">4</span><span class="style10">||</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body">110          </span><span class="style11">counter </span><span class="style10">=</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body">111           </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n----------------------------------SCREEN----------------------------------"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">112  </span>
+<span class="body">113     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nJ10     J9  J8  J7  J6  J5  J4  J3  J2  J1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">114     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"I10   I9  I8  I7  I6  I5  I4  I3  I2  I1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">115     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"H10   H9  H8  H7  H6  H5  H4  H3  H2  H1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">116     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"G10   G9  G8  G7  G6  G5  G4  G3  G2  G1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">117     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"F10   F9  F8  F7  F6  F5  F4  F3  F2  F1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">118     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"E10   E9  E8  E7  E6  E5  E4  E3  E2  E1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">119     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"D10   D9  D8  D7  D6  D5  D4  D3  D2  D1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">120     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"C10   C9  C8  C7  C6  C5  C4  C3  C2  C1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">121     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"B10   B9  B8  B7  B6  B5  B4  B3  B2  B1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">122     </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"A10   A9  A8  A7  A6  A5  A4  A3  A2  A1"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">123  </span>
+<span class="body">124              </span><span class="style5">while </span><span class="style10">(</span><span class="style11">counter</span><span class="style10">&lt;=</span><span class="style11">numberSeats</span><span class="style10">){</span>
+<span class="body">125              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the preferred seating number "</span><span class="style10">&lt;&lt;</span><span class="style11">counter</span><span class="style10">&lt;&lt;</span><span class="style6">" :"</span><span class="style10">;</span>
+<span class="body">126              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSeating</span><span class="style10">;</span>
+<span class="body">127              </span><span class="style11">counter</span><span class="style10">++;</span>
+<span class="body">128              </span><span class="style10">}</span>
+<span class="body">129          </span><span class="style10">}</span>
+<span class="body">130          </span><span class="style10">}</span>
+<span class="body">131          </span><span class="style10">}</span>
+<span class="body">132  </span>
+<span class="body">133  </span>
+<span class="body">134      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of Senior Citizens: \n"</span><span class="style10">;</span>
+<span class="body">135      </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSenior_Citizens</span><span class="style10">;</span>
+<span class="body">136      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of Adults: \n"</span><span class="style10">;</span>
+<span class="body">137      </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberAdult</span><span class="style10">;</span>
+<span class="body">138      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of Students: \n"</span><span class="style10">;</span>
+<span class="body">139      </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberStudent</span><span class="style10">;</span>
+<span class="body">140  </span>
+<span class="body">141      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nEnter the number of Children: \n"</span><span class="style10">;</span>
+<span class="body">142      </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberChildren</span><span class="style10">;</span>
+<span class="body">143  </span>
+<span class="body">144      </span><span class="style5">if </span><span class="style10">((</span><span class="style11">numberSeats</span><span class="style10">==(</span><span class="style11">numberSenior_Citizens </span><span class="style10">+ </span><span class="style11">numberAdult </span><span class="style10">+ </span><span class="style11">numberStudent </span><span class="style10">+ </span><span class="style11">numberChildren</span><span class="style10">))==</span><span class="style5">true</span><span class="style10">){</span>
+<span class="body">145         </span><span class="style10">}</span>
+<span class="body">146      </span><span class="style5">else </span><span class="style10">{</span>
+<span class="body">147              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nError:The total number of people must equal to the number of seats you've chosen"</span><span class="style10">;</span>
+<span class="body">148              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Senior Citizens: \n"</span><span class="style10">;</span>
+<span class="body">149              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSenior_Citizens</span><span class="style10">;</span>
+<span class="body">150              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Adults: \n"</span><span class="style10">;</span>
+<span class="body">151              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberAdult</span><span class="style10">;</span>
+<span class="body">152              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Students: \n"</span><span class="style10">;</span>
+<span class="body">153              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberStudent</span><span class="style10">;</span>
+<span class="body">154              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Children: \n"</span><span class="style10">;</span>
+<span class="body">155              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberChildren</span><span class="style10">;</span>
+<span class="body">156              </span><span class="style5">if </span><span class="style10">((</span><span class="style11">numberSeats</span><span class="style10">==(</span><span class="style11">numberSenior_Citizens </span><span class="style10">+ </span><span class="style11">numberAdult </span><span class="style10">+ </span><span class="style11">numberStudent </span><span class="style10">+ </span><span class="style11">numberChildren</span><span class="style10">))==</span><span class="style5">true</span><span class="style10">){</span>
+<span class="body">157         </span><span class="style10">}</span>
+<span class="body">158              </span><span class="style5">while </span><span class="style10">((</span><span class="style11">numberSeats</span><span class="style10">==(</span><span class="style11">numberSenior_Citizens </span><span class="style10">+ </span><span class="style11">numberAdult </span><span class="style10">+ </span><span class="style11">numberStudent </span><span class="style10">+ </span><span class="style11">numberChildren</span><span class="style10">))==</span><span class="style5">false</span><span class="style10">){</span>
+<span class="body">159                  </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nError:The total number of people must equal to the number of seats you've chosen"</span><span class="style10">;</span>
+<span class="body">160                  </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Senior Citizens: \n"</span><span class="style10">;</span>
+<span class="body">161                  </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberSenior_Citizens</span><span class="style10">;</span>
+<span class="body">162                  </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Adults: \n"</span><span class="style10">;</span>
+<span class="body">163                  </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberAdult</span><span class="style10">;</span>
+<span class="body">164                  </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Students: \n"</span><span class="style10">;</span>
+<span class="body">165                  </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberStudent</span><span class="style10">;</span>
+<span class="body">166                  </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nPlease re-enter the number of Children: \n"</span><span class="style10">;</span>
+<span class="body">167                  </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">numberChildren</span><span class="style10">;</span>
+<span class="body">168              </span><span class="style10">}</span>
+<span class="body">169          </span><span class="style10">}</span>
+<span class="body">170  </span>
+<span class="body">171      </span><span class="style11">priceSenior_Citizens </span><span class="style10">= </span><span class="style4">7</span><span class="style10">*</span><span class="style11">numberSenior_Citizens</span><span class="style10">;</span>
+<span class="body">172      </span><span class="style11">priceAdult </span><span class="style10">= </span><span class="style4">10</span><span class="style10">*</span><span class="style11">numberAdult</span><span class="style10">;</span>
+<span class="body">173      </span><span class="style11">priceStudent </span><span class="style10">= </span><span class="style4">8</span><span class="style10">*</span><span class="style11">numberStudent</span><span class="style10">;</span>
+<span class="body">174      </span><span class="style11">priceChildren </span><span class="style10">= </span><span class="style4">5</span><span class="style10">*</span><span class="style11">numberChildren</span><span class="style10">;</span>
+<span class="body">175  </span>
+<span class="body">176      </span><span class="style11">totalPrice </span><span class="style10">= </span><span class="style11">priceSenior_Citizens </span><span class="style10">+ </span><span class="style11">priceAdult </span><span class="style10">+ </span><span class="style11">priceStudent </span><span class="style10">+ </span><span class="style11">priceChildren</span><span class="style10">;</span>
+<span class="body">177  </span>
+<span class="body">178      </span><span class="style16">cout</span><span class="style10">.</span><span class="style11">setf</span><span class="style10">(</span><span class="style11">ios</span><span class="style10">::</span><span class="style11">fixed</span><span class="style10">);</span>
+<span class="body">179      </span><span class="style16">cout</span><span class="style10">.</span><span class="style11">precision</span><span class="style10">(</span><span class="style4">2</span><span class="style10">);</span>
+<span class="body">180      </span><span class="style16">cout</span><span class="style10">.</span><span class="style11">setf</span><span class="style10">(</span><span class="style11">ios</span><span class="style10">::</span><span class="style11">showpoint</span><span class="style10">);</span>
+<span class="body">181  </span>
+<span class="body">182      </span><span class="style5">if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">1</span><span class="style10">){</span>
+<span class="body">183              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">184              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nYour movie is Avengers: Infinity War"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">185      </span><span class="style10">}</span><span class="style5">else if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">2</span><span class="style10">){</span>
+<span class="body">186              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">187              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nYour movie is Deadpool 2"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">188      </span><span class="style10">}</span><span class="style5">else if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">3</span><span class="style10">){</span>
+<span class="body">189              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">190              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nYour movie is Jumanji: Welcome To The Jungle"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">191      </span><span class="style10">}</span><span class="style5">else if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">4</span><span class="style10">){</span>
+<span class="body">192              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">193              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nYour movie is Jurassic World: Fallen Kingdom"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">194      </span><span class="style10">}</span><span class="style5">else if </span><span class="style10">(</span><span class="style11">numberMovie</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body">195              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">196              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\nYour movie is The Incredibles 2"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">197      </span><span class="style10">}</span>
+<span class="body">198  </span>
+<span class="body">199      </span><span class="style5">if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">1</span><span class="style10">){</span>
+<span class="body">200          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Total price is: RM "</span><span class="style10">&lt;&lt;</span><span class="style11">totalPrice</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">201          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Your movie will begin at 12.00p.m."</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">202          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy your movie and please come again :) "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">203  </span>
+<span class="body">204          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">205      </span><span class="style10">}</span>
+<span class="body">206      </span><span class="style5">else if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">2</span><span class="style10">){</span>
+<span class="body">207          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Total price is: RM "</span><span class="style10">&lt;&lt;</span><span class="style11">totalPrice</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">208          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Your movie will begin at 2.00p.m."</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">209          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy your movie and please come again :) "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">210  </span>
+<span class="body">211          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">212      </span><span class="style10">}</span>
+<span class="body">213      </span><span class="style5">else if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">3</span><span class="style10">){</span>
+<span class="body">214          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Total price is: RM "</span><span class="style10">&lt;&lt;</span><span class="style11">totalPrice</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">215          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Your movie will begin at 4.00p.m."</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">216          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy your movie and please come again :) "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">217  </span>
+<span class="body">218          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">219      </span><span class="style10">}</span>
+<span class="body">220      </span><span class="style5">else if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">4</span><span class="style10">){</span>
+<span class="body">221          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Total price is: RM "</span><span class="style10">&lt;&lt;</span><span class="style11">totalPrice</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">222          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Your movie will begin at 6.00p.m."</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">223          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy your movie and please come again :) "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">224  </span>
+<span class="body">225         </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">226      </span><span class="style10">}</span>
+<span class="body">227      </span><span class="style5">else if </span><span class="style10">(</span><span class="style11">ShowTime</span><span class="style10">==</span><span class="style4">5</span><span class="style10">){</span>
+<span class="body">228          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Total price is: RM "</span><span class="style10">&lt;&lt;</span><span class="style11">totalPrice</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">229          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Your movie will begin at 8.00p.m."</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">230          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Enjoy your movie and please come again :) "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">231  </span>
+<span class="body">232          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"\n#########################################################"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body">233      </span><span class="style10">}</span>
+<span class="body">234      </span><span class="style10">}</span>
+<span class="body">235  </span>
+<span class="body">236  </span>
+<span class="body">237  </span>
+<span class="body">238  </span></span>
+</code></pre>
+</body>
+</html>
